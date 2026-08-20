@@ -45,7 +45,7 @@ const menu: MenuItem[] = [
     name: "Hingel Mantı",
     desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
     price: "700",
-    img: hingelAsset.url,
+    img: hingelAsset,
   },
   {
     name: "Bohça, Üçgen ve Çıtır Mantı",

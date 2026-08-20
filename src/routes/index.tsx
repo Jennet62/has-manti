@@ -46,7 +46,6 @@ const menu: MenuItem[] = [
     desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
     price: "700",
     img: hingelAsset.url,
-    tall: true,
   },
   {
     name: "Bohça, Üçgen ve Çıtır Mantı",

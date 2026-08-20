@@ -241,10 +241,14 @@ function Index() {
               <img
                 src={item.img}
                 alt={item.name}
-                width={800}
-                height={800}
+                width={item.tall ? 1080 : 800}
+                height={item.tall ? 1440 : 800}
                 loading="lazy"
-                className="h-20 w-20 flex-none rounded-full object-cover sm:h-24 sm:w-24"
+                className={
+                  item.tall
+                    ? "h-24 w-20 flex-none rounded-lg object-cover sm:h-28 sm:w-24"
+                    : "h-20 w-20 flex-none rounded-full object-cover sm:h-24 sm:w-24"
+                }
               />
               <div className="min-w-0 flex-1">
                 <h3 className="text-lg font-semibold sm:text-xl">{item.name}</h3>

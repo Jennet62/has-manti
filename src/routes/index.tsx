@@ -186,7 +186,7 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={doughAsset.url}
+              src={doughMeatImg}
               alt="Elde açılan hamur kareleri üzerine tek tek konulan günlük taze dana kıyma"
               width={1200}
               height={1600}

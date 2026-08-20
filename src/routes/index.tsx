@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import heroImg from "@/assets/hero-manti.jpg";
 import doughHandsImg from "@/assets/dough-hands.jpg";
-import hingelAsset from "@/assets/dish-hingel-real.jpeg";
+import hingelAsset from "@/assets/dish-hingel-real.jpg";
 import bohcaImg from "@/assets/dish-bohca.jpg";
 import midyeImg from "@/assets/dish-midye.jpg";
 import tamBugdayImg from "@/assets/dish-tambugday.jpg";

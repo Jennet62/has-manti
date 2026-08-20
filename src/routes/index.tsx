@@ -187,7 +187,7 @@ function Index() {
           <div className="relative">
             <img
               src={doughHandsImg}
-              alt="Oklavayla elde açılan ve tek tek kesilen katkısız mantı hamuru"
+              alt="Unlanmış masada oklava, açılmış hamur ve tek tek kesilen katkısız mantı kareleri"
               width={1200}
               height={1600}
               loading="lazy"

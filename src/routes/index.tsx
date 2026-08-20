@@ -32,7 +32,15 @@ export const Route = createFileRoute("/")({
   component: Index,
 });
 
-const menu = [
+type MenuItem = {
+  name: string;
+  desc: string;
+  price: string;
+  img: string;
+  tall?: boolean;
+};
+
+const menu: MenuItem[] = [
   {
     name: "Hingel Mantı",
     desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",

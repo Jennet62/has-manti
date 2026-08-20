@@ -155,3 +155,41 @@
     color: var(--color-foreground);
   }
 }
+
+@theme inline {
+  --color-gold: var(--gold);
+  --color-ink: var(--ink);
+}
+
+@layer base {
+  body {
+    font-family: var(--font-sans);
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+  }
+}
+
+@utility font-script {
+  font-family: var(--font-script);
+}
+
+@utility hero-overlay {
+  background-image: var(--gradient-hero);
+}
+
+@utility card-warm {
+  box-shadow: var(--shadow-warm);
+}
+
+@utility rule-gold {
+  &::before,
+  &::after {
+    content: "";
+    flex: 1;
+    height: 1px;
+    background: linear-gradient(to right, transparent, var(--gold), transparent);
+  }
+}

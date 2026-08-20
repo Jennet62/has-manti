@@ -1,6 +1,8 @@
-# Lezzet Atölyesi
+# Has Mantı
 
-Can you help me build a website similar to this one? The website language needs to be in turkish it is for turkish audience. Also add that the meat is aquired everyday fresh and the dough has no additives and hommade manti all of it and other good stuff. Surprise me
+Has Mantı — el yapımı geleneksel mantı sitesi.
+
+Her gün taze dana etiyle, katkısız el açması hamurla hazırlanan el yapımı mantı. Hingel, midye, Özbek, tam buğday, organik ve glutensiz mantı çeşitleri.
 
 This project was built with [Lovable](https://lovable.dev).
 

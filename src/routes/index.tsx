@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import heroImg from "@/assets/hero-manti.jpg";
-import doughMeatImg from "@/assets/dough-meat.jpg";
+import doughHandsImg from "@/assets/dough-hands.jpg";
 import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
 import bohcaImg from "@/assets/dish-bohca.jpg";
 import midyeImg from "@/assets/dish-midye.jpg";
@@ -186,8 +186,8 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={doughMeatImg}
-              alt="Elde açılan hamur kareleri üzerine tek tek konulan günlük taze dana kıyma"
+              src={doughHandsImg}
+              alt="Oklavayla elde açılan ve tek tek kesilen katkısız mantı hamuru"
               width={1200}
               height={1600}
               loading="lazy"

@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
 import heroImg from "@/assets/hero-manti.jpg";
-import doughAsset from "@/assets/hamur-kiyma.jpg.asset.json";
+import doughMeatImg from "@/assets/dough-meat.jpg";
 import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
 import bohcaImg from "@/assets/dish-bohca.jpg";
 import midyeImg from "@/assets/dish-midye.jpg";

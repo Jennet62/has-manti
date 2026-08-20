@@ -2,7 +2,7 @@ import { createFileRoute } from "@tanstack/react-router";
 
 import heroImg from "@/assets/hero-manti.jpg";
 import doughAsset from "@/assets/hamur-kiyma.jpg.asset.json";
-import hingelImg from "@/assets/dish-hingel.jpg";
+import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
 import bohcaImg from "@/assets/dish-bohca.jpg";
 import midyeImg from "@/assets/dish-midye.jpg";
 import tamBugdayImg from "@/assets/dish-tambugday.jpg";
@@ -37,7 +37,8 @@ const menu = [
     name: "Hingel Mantı",
     desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
     price: "700",
-    img: hingelImg,
+    img: hingelAsset.url,
+    tall: true,
   },
   {
     name: "Bohça, Üçgen ve Çıtır Mantı",

@@ -91,7 +91,7 @@ const menu: MenuItem[] = [
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
-    price: "900",
+    price: "1.000",
     img: organikAsset.url,
   },
   {

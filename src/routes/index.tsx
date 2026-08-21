@@ -72,7 +72,7 @@ const menu: MenuItem[] = [
 
   {
     name: "Çıtır Mantı",
-    desc: "Kızgın yağda altın rengine gelene kadar kızartılan çıtır çıtır mantı",
+    desc: "Sevenlere özel dışı çıtır içi özel lezzet",
     price: "800",
     img: citirAsset.url,
   },

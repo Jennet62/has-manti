@@ -1,7 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroImg from "@/assets/hero-manti.jpg";
-import doughHandsImg from "@/assets/dough-hands.jpg";
+import heroAsset from "@/assets/hero-manti.jpg.asset.json";
+import doughHandsAsset from "@/assets/dough-hands.jpg.asset.json";
 import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
 import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
 import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
@@ -133,7 +133,7 @@ function Index() {
       {/* Hero */}
       <header className="relative isolate flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={heroImg}
+          src={heroAsset.url}
           alt="Bakır kapta yoğurtlu ve tereyağlı geleneksel Türk mantısı"
           width={1600}
           height={1200}
@@ -209,7 +209,7 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={doughHandsImg}
+              src={doughHandsAsset.url}
               alt="Unlanmış masada oklava, açılmış hamur ve tek tek kesilen katkısız mantı kareleri"
               width={1200}
               height={1600}

@@ -3,7 +3,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-manti.jpg";
 import doughHandsImg from "@/assets/dough-hands.jpg";
 import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
-import bohcaImg from "@/assets/dish-bohca.jpg";
+import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
+import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
+import bohcaAsset from "@/assets/dish-bohca-real.jpg.asset.json";
 import midyeImg from "@/assets/dish-midye.jpg";
 import tamBugdayImg from "@/assets/dish-tambugday.jpg";
 import organikImg from "@/assets/dish-organik.jpg";
@@ -48,11 +50,24 @@ const menu: MenuItem[] = [
     img: hingelAsset.url,
   },
   {
-    name: "Bohça, Üçgen ve Çıtır Mantı",
-    desc: "Geleneksel kesim, bol kıymalı klasik tat",
+    name: "Kayseri Mantı",
+    desc: "El açması minik mantı, sos ve yoğurduyla klasik Kayseri usulü",
     price: "800",
-    img: bohcaImg,
+    img: kayseriAsset.url,
   },
+  {
+    name: "Üçgen Mantı",
+    desc: "Üçgen kesim, bol kıymalı geleneksel tat",
+    price: "800",
+    img: ucgenAsset.url,
+  },
+  {
+    name: "Bohça Mantı",
+    desc: "Bohça kıvrımıyla elde kapatılan, yoğurtlu ve acılı sosuyla enfes",
+    price: "800",
+    img: bohcaAsset.url,
+  },
+
   {
     name: "Midye Mantı",
     desc: "Şık görünüm ve enfes dokusuyla özel lezzet",

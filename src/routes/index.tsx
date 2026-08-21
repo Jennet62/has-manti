@@ -102,7 +102,7 @@ const menu: MenuItem[] = [
   },
   {
     name: "Glutensiz Mantı",
-    desc: "Glutensiz beslenenler için ayrı tezgahta özel hazırlık",
+    desc: "Glutensiz beslenenler için özel hazırlanan lezzet",
     price: "1.300",
     img: glutensizAsset.url,
   },

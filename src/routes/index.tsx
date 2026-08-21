@@ -50,11 +50,24 @@ const menu: MenuItem[] = [
     img: hingelAsset.url,
   },
   {
-    name: "Bohça, Üçgen ve Çıtır Mantı",
-    desc: "Geleneksel kesim, bol kıymalı klasik tat",
+    name: "Kayseri Mantı",
+    desc: "El açması minik mantı, sos ve yoğurduyla klasik Kayseri usulü",
     price: "800",
-    img: bohcaImg,
+    img: kayseriAsset.url,
   },
+  {
+    name: "Üçgen Mantı",
+    desc: "Üçgen kesim, bol kıymalı geleneksel tat",
+    price: "800",
+    img: ucgenAsset.url,
+  },
+  {
+    name: "Bohça Mantı",
+    desc: "Bohça kıvrımıyla elde kapatılan, yoğurtlu ve acılı sosuyla enfes",
+    price: "800",
+    img: bohcaAsset.url,
+  },
+
   {
     name: "Midye Mantı",
     desc: "Şık görünüm ve enfes dokusuyla özel lezzet",

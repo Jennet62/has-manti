@@ -77,28 +77,40 @@ const menu: MenuItem[] = [
     img: midyeImg,
   },
   {
+    name: "Çıtır Mantı",
+    desc: "Kızgın yağda altın rengine gelene kadar kızartılan çıtır çıtır mantı",
+    price: "800",
+    img: citirAsset.url,
+  },
+  {
+    name: "Pelmeni Mantı",
+    desc: "İri kıvrımlı pelmeni usulü, yoğurt ve tereyağlı sosuyla",
+    price: "900",
+    img: pelmeniAsset.url,
+  },
+  {
     name: "Tam Buğday Unlu Mantı",
     desc: "Sağlıklı beslenenler için aranan tat",
     price: "900",
-    img: tamBugdayImg,
+    img: tamBugdayAsset.url,
   },
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
     price: "900",
-    img: organikImg,
+    img: organikAsset.url,
   },
   {
     name: "Özbek Mantı",
     desc: "Geleneksel kesim ve iç harcıyla tek lokmada büyük lezzet",
     price: "1.100",
-    img: ozbekImg,
+    img: ozbekAsset.url,
   },
   {
     name: "Glutensiz Mantı",
     desc: "Glutensiz beslenenler için ayrı tezgahta özel hazırlık",
     price: "1.300",
-    img: glutensizImg,
+    img: glutensizAsset.url,
   },
 ];
 

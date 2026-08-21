@@ -133,7 +133,7 @@ function Index() {
       {/* Hero */}
       <header className="relative isolate flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={heroImg}
+          src={heroAsset.url}
           alt="Bakır kapta yoğurtlu ve tereyağlı geleneksel Türk mantısı"
           width={1600}
           height={1200}

@@ -335,7 +335,7 @@ function Index() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="https://wa.me/905000000000"
+              href="https://wa.me/905423591418"
               className="rounded-full bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-widest text-accent-foreground transition-transform hover:-translate-y-0.5"
             >
               WhatsApp ile Sipariş

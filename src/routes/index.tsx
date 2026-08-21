@@ -7,10 +7,12 @@ import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
 import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
 import bohcaAsset from "@/assets/dish-bohca-real.jpg.asset.json";
 import midyeImg from "@/assets/dish-midye.jpg";
-import tamBugdayImg from "@/assets/dish-tambugday.jpg";
-import organikImg from "@/assets/dish-organik.jpg";
-import ozbekImg from "@/assets/dish-ozbek.jpg";
-import glutensizImg from "@/assets/dish-glutensiz.jpg";
+import citirAsset from "@/assets/dish-citir-real.jpg.asset.json";
+import pelmeniAsset from "@/assets/dish-pelmeni-real.jpg.asset.json";
+import tamBugdayAsset from "@/assets/dish-tambugday-real.jpg.asset.json";
+import organikAsset from "@/assets/dish-organik-real.jpg.asset.json";
+import ozbekAsset from "@/assets/dish-ozbek-real.jpg.asset.json";
+import glutensizAsset from "@/assets/dish-glutensiz-real.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -75,28 +77,40 @@ const menu: MenuItem[] = [
     img: midyeImg,
   },
   {
+    name: "Çıtır Mantı",
+    desc: "Kızgın yağda altın rengine gelene kadar kızartılan çıtır çıtır mantı",
+    price: "800",
+    img: citirAsset.url,
+  },
+  {
+    name: "Pelmeni Mantı",
+    desc: "İri kıvrımlı pelmeni usulü, yoğurt ve tereyağlı sosuyla",
+    price: "900",
+    img: pelmeniAsset.url,
+  },
+  {
     name: "Tam Buğday Unlu Mantı",
     desc: "Sağlıklı beslenenler için aranan tat",
     price: "900",
-    img: tamBugdayImg,
+    img: tamBugdayAsset.url,
   },
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
     price: "900",
-    img: organikImg,
+    img: organikAsset.url,
   },
   {
     name: "Özbek Mantı",
     desc: "Geleneksel kesim ve iç harcıyla tek lokmada büyük lezzet",
     price: "1.100",
-    img: ozbekImg,
+    img: ozbekAsset.url,
   },
   {
     name: "Glutensiz Mantı",
     desc: "Glutensiz beslenenler için ayrı tezgahta özel hazırlık",
     price: "1.300",
-    img: glutensizImg,
+    img: glutensizAsset.url,
   },
 ];
 

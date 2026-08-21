@@ -209,7 +209,7 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={doughHandsImg}
+              src={doughHandsAsset.url}
               alt="Unlanmış masada oklava, açılmış hamur ve tek tek kesilen katkısız mantı kareleri"
               width={1200}
               height={1600}

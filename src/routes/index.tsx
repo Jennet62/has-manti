@@ -72,7 +72,7 @@ const menu: MenuItem[] = [
 
   {
     name: "Çıtır Mantı",
-    desc: "Kızgın yağda altın rengine gelene kadar kızartılan çıtır çıtır mantı",
+    desc: "Sevenlere özel dışı çıtır içi özel lezzet",
     price: "800",
     img: citirAsset.url,
   },
@@ -91,7 +91,7 @@ const menu: MenuItem[] = [
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
-    price: "900",
+    price: "1.000",
     img: organikAsset.url,
   },
   {
@@ -102,7 +102,7 @@ const menu: MenuItem[] = [
   },
   {
     name: "Glutensiz Mantı",
-    desc: "Glutensiz beslenenler için ayrı tezgahta özel hazırlık",
+    desc: "Glutensiz beslenenler için özel hazırlanan lezzet",
     price: "1.300",
     img: glutensizAsset.url,
   },

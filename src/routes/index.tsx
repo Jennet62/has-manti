@@ -7,10 +7,12 @@ import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
 import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
 import bohcaAsset from "@/assets/dish-bohca-real.jpg.asset.json";
 import midyeImg from "@/assets/dish-midye.jpg";
-import tamBugdayImg from "@/assets/dish-tambugday.jpg";
-import organikImg from "@/assets/dish-organik.jpg";
-import ozbekImg from "@/assets/dish-ozbek.jpg";
-import glutensizImg from "@/assets/dish-glutensiz.jpg";
+import citirAsset from "@/assets/dish-citir-real.jpg.asset.json";
+import pelmeniAsset from "@/assets/dish-pelmeni-real.jpg.asset.json";
+import tamBugdayAsset from "@/assets/dish-tambugday-real.jpg.asset.json";
+import organikAsset from "@/assets/dish-organik-real.jpg.asset.json";
+import ozbekAsset from "@/assets/dish-ozbek-real.jpg.asset.json";
+import glutensizAsset from "@/assets/dish-glutensiz-real.jpg.asset.json";
 
 export const Route = createFileRoute("/")({
   head: () => ({

@@ -6,7 +6,7 @@ import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
 import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
 import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
 import bohcaAsset from "@/assets/dish-bohca-real.jpg.asset.json";
-import midyeImg from "@/assets/dish-midye.jpg";
+
 import citirAsset from "@/assets/dish-citir-real.jpg.asset.json";
 import pelmeniAsset from "@/assets/dish-pelmeni-real.jpg.asset.json";
 import tamBugdayAsset from "@/assets/dish-tambugday-real.jpg.asset.json";
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Her gün taze dana etiyle, katkısız el açması hamurla hazırlanan el yapımı mantı. Hingel, midye, Özbek, tam buğday, organik ve glutensiz mantı çeşitleri. Sakarya içi teslimat.",
+          "Her gün taze dana etiyle, katkısız el açması hamurla hazırlanan el yapımı mantı. Hingel, Özbek, tam buğday, organik ve glutensiz mantı çeşitleri. Sakarya içi teslimat.",
       },
       { property: "og:title", content: "Has Mantı | El Yapımı Geleneksel Mantı" },
       {
@@ -53,7 +53,7 @@ const menu: MenuItem[] = [
   },
   {
     name: "Kayseri Mantı",
-    desc: "El açması minik mantı, sos ve yoğurduyla klasik Kayseri usulü",
+    desc: "El açması minik mantı, klasik Kayseri usulü",
     price: "800",
     img: kayseriAsset.url,
   },
@@ -65,17 +65,11 @@ const menu: MenuItem[] = [
   },
   {
     name: "Bohça Mantı",
-    desc: "Bohça kıvrımıyla elde kapatılan, yoğurtlu ve acılı sosuyla enfes",
+    desc: "Bohça kıvrımıyla elde kapatılan, klasik tat",
     price: "800",
     img: bohcaAsset.url,
   },
 
-  {
-    name: "Midye Mantı",
-    desc: "Şık görünüm ve enfes dokusuyla özel lezzet",
-    price: "900",
-    img: midyeImg,
-  },
   {
     name: "Çıtır Mantı",
     desc: "Kızgın yağda altın rengine gelene kadar kızartılan çıtır çıtır mantı",
@@ -84,7 +78,7 @@ const menu: MenuItem[] = [
   },
   {
     name: "Pelmeni Mantı",
-    desc: "İri kıvrımlı pelmeni usulü, yoğurt ve tereyağlı sosuyla",
+    desc: "İri kıvrımlı pelmeni usulü",
     price: "900",
     img: pelmeniAsset.url,
   },

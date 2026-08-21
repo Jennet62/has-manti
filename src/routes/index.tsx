@@ -170,15 +170,15 @@ function Index() {
 
       {/* Şeritteki vaatler */}
       <section className="bg-primary py-5">
-        <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-center gap-x-10 gap-y-2 px-6 text-center text-xs font-semibold uppercase tracking-[0.2em] text-primary-foreground/90">
-          <span>Günlük Taze Dana Eti</span>
-          <span className="text-gold">•</span>
-          <span>Katkısız Hamur</span>
-          <span className="text-gold">•</span>
-          <span>Elde Açma</span>
-          <span className="text-gold">•</span>
-          <span>Kaya Tuzu</span>
-        </div>
+        <ul className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-foreground/90 sm:flex-row sm:justify-center sm:gap-x-8 sm:gap-y-0 sm:text-xs sm:tracking-[0.2em]">
+          <li>Günlük Taze Dana Eti</li>
+          <li aria-hidden className="hidden text-gold sm:block">•</li>
+          <li>Katkısız Hamur</li>
+          <li aria-hidden className="hidden text-gold sm:block">•</li>
+          <li>Elde Açma</li>
+          <li aria-hidden className="hidden text-gold sm:block">•</li>
+          <li>Kaya Tuzu</li>
+        </ul>
       </section>
 
       {/* Hikaye */}

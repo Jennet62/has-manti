@@ -210,7 +210,7 @@ function Index() {
           <div className="relative">
             <img
               src={doughHandsImg}
-              alt="Unlanmış masada oklava, açılmış hamur ve tek tek kesilen katkısız mantı kareleri"
+              alt="Elde açılan katkısız hamur kareleri üzerine günlük taze %100 dana kıyma konuluyor"
               width={1200}
               height={1600}
               loading="lazy"

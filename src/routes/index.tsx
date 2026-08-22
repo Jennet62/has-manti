@@ -1,18 +1,18 @@
 import { createFileRoute } from "@tanstack/react-router";
 
-import heroAsset from "@/assets/hero-manti.jpg.asset.json";
-import doughHandsAsset from "@/assets/dough-hands.jpg.asset.json";
-import hingelAsset from "@/assets/dish-hingel-real.jpg.asset.json";
-import kayseriAsset from "@/assets/dish-kayseri-real.jpg.asset.json";
-import ucgenAsset from "@/assets/dish-ucgen-real.jpg.asset.json";
-import bohcaAsset from "@/assets/dish-bohca-real.jpg.asset.json";
+import heroImg from "@/assets/hero-manti.jpg";
+import doughHandsImg from "@/assets/dough-hands.jpg";
+import hingelImg from "@/assets/dish-hingel-real.jpg";
+import kayseriImg from "@/assets/dish-kayseri-real.jpg";
+import ucgenImg from "@/assets/dish-ucgen-real.jpg";
+import bohcaImg from "@/assets/dish-bohca-real.jpg";
 
-import citirAsset from "@/assets/dish-citir-real.jpg.asset.json";
-import pelmeniAsset from "@/assets/dish-pelmeni-real.jpg.asset.json";
-import tamBugdayAsset from "@/assets/dish-tambugday-real.jpg.asset.json";
-import organikAsset from "@/assets/dish-organik-real.jpg.asset.json";
-import ozbekAsset from "@/assets/dish-ozbek-real.jpg.asset.json";
-import glutensizAsset from "@/assets/dish-glutensiz-real.jpg.asset.json";
+import citirImg from "@/assets/dish-citir-real.jpg";
+import pelmeniImg from "@/assets/dish-pelmeni-real.jpg";
+import tamBugdayImg from "@/assets/dish-tambugday-real.jpg";
+import organikImg from "@/assets/dish-organik-real.jpg";
+import ozbekImg from "@/assets/dish-ozbek-real.jpg";
+import glutensizImg from "@/assets/dish-glutensiz-real.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -49,62 +49,62 @@ const menu: MenuItem[] = [
     name: "Hingel Mantı",
     desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
     price: "700",
-    img: hingelAsset.url,
+    img: hingelImg,
   },
   {
     name: "Kayseri Mantı",
     desc: "El açması minik mantı, klasik Kayseri usulü",
     price: "800",
-    img: kayseriAsset.url,
+    img: kayseriImg,
   },
   {
     name: "Üçgen Mantı",
     desc: "Üçgen kesim, bol kıymalı geleneksel tat",
     price: "800",
-    img: ucgenAsset.url,
+    img: ucgenImg,
   },
   {
     name: "Bohça Mantı",
     desc: "Bohça kıvrımıyla elde kapatılan, klasik tat",
     price: "800",
-    img: bohcaAsset.url,
+    img: bohcaImg,
   },
 
   {
     name: "Çıtır Mantı",
     desc: "Sevenlere özel dışı çıtır içi özel lezzet",
     price: "800",
-    img: citirAsset.url,
+    img: citirImg,
   },
   {
     name: "Pelmeni Mantı",
     desc: "İri kıvrımlı pelmeni usulü",
     price: "900",
-    img: pelmeniAsset.url,
+    img: pelmeniImg,
   },
   {
     name: "Tam Buğday Unlu Mantı",
     desc: "Sağlıklı beslenenler için aranan tat",
     price: "900",
-    img: tamBugdayAsset.url,
+    img: tamBugdayImg,
   },
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
     price: "1.000",
-    img: organikAsset.url,
+    img: organikImg,
   },
   {
     name: "Özbek Mantı",
     desc: "Geleneksel kesim ve iç harcıyla tek lokmada büyük lezzet",
     price: "1.100",
-    img: ozbekAsset.url,
+    img: ozbekImg,
   },
   {
     name: "Glutensiz Mantı",
     desc: "Glutensiz beslenenler için özel hazırlanan lezzet",
     price: "1.300",
-    img: glutensizAsset.url,
+    img: glutensizImg,
   },
 ];
 
@@ -133,7 +133,7 @@ function Index() {
       {/* Hero */}
       <header className="relative isolate flex min-h-[92vh] items-end overflow-hidden">
         <img
-          src={heroAsset.url}
+          src={heroImg}
           alt="Bakır kapta yoğurtlu ve tereyağlı geleneksel Türk mantısı"
           width={1600}
           height={1200}
@@ -209,7 +209,7 @@ function Index() {
           </div>
           <div className="relative">
             <img
-              src={doughHandsAsset.url}
+              src={doughHandsImg}
               alt="Unlanmış masada oklava, açılmış hamur ve tek tek kesilen katkısız mantı kareleri"
               width={1200}
               height={1600}

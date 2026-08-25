@@ -211,8 +211,8 @@ function Index() {
             <img
               src={doughHandsImg}
               alt="Elde açılan katkısız hamur kareleri üzerine günlük taze %100 dana kıyma konuluyor"
-              width={1200}
-              height={1600}
+              width={1080}
+              height={1250}
               loading="lazy"
               className="card-warm w-full rounded-md object-cover"
             />

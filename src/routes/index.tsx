@@ -3,12 +3,13 @@ import { createFileRoute } from "@tanstack/react-router";
 import heroImg from "@/assets/hero-manti.jpg";
 import doughHandsImg from "@/assets/dough-hands.jpg";
 import hingelImg from "@/assets/dish-hingel-real.jpg";
-import kayseriImg from "@/assets/dish-kayseri-real.jpg";
 import ucgenImg from "@/assets/dish-ucgen-real.jpg";
 import bohcaImg from "@/assets/dish-bohca-real.jpg";
 
 import citirImg from "@/assets/dish-citir-real.jpg";
-import pelmeniImg from "@/assets/dish-pelmeni-real.jpg";
+import halujImg from "@/assets/dish-haluj.jpg";
+import sebitImg from "@/assets/dish-sebit.jpg";
+import lavasImg from "@/assets/dish-lavas.jpg";
 import tamBugdayImg from "@/assets/dish-tambugday-real.jpg";
 import organikImg from "@/assets/dish-organik-real.jpg";
 import ozbekImg from "@/assets/dish-ozbek-real.jpg";
@@ -21,13 +22,13 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Her gün taze dana etiyle, katkısız el açması hamurla hazırlanan el yapımı mantı. Hingel, Özbek, tam buğday, organik ve glutensiz mantı çeşitleri. Sakarya içi teslimat.",
+          "Her gün taze kıymayla, katkısız el açması hamurla hazırlanan ev yapımı mantı. Hingel, Özbek, tam buğday, organik ve glutensiz mantı çeşitleri. Sakarya içi teslimat.",
       },
       { property: "og:title", content: "Has Mantı | El Yapımı Geleneksel Mantı" },
       {
         property: "og:description",
         content:
-          "Günlük taze dana eti, katkısız hamur, elde açılan gerçek mantı. Fiyat listesi ve sipariş bilgileri.",
+          "Günlük taze kıyma, katkısız hamur, elde kapatılan gerçek mantı. Fiyat listesi ve sipariş bilgileri.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -41,85 +42,104 @@ type MenuItem = {
   desc: string;
   price: string;
   img: string;
-  tall?: boolean;
+  ingredients?: string;
+  badge?: string;
 };
 
 const menu: MenuItem[] = [
   {
-    name: "Hingel Mantı",
-    desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
-    price: "700",
-    img: hingelImg,
-  },
-  {
-    name: "Kayseri Mantı",
-    desc: "El açması minik mantı, klasik Kayseri usulü",
-    price: "800",
-    img: kayseriImg,
+    name: "Klasik Bohça Mantı",
+    desc: "Bohça kıvrımıyla elde kapatılan, klasik tat",
+    price: "900",
+    img: bohcaImg,
+    ingredients: "Un, su, tuz, yumurta, kıyma, soğan, karabiber",
   },
   {
     name: "Üçgen Mantı",
     desc: "Üçgen kesim, bol kıymalı geleneksel tat",
-    price: "800",
+    price: "900",
     img: ucgenImg,
   },
   {
-    name: "Bohça Mantı",
-    desc: "Bohça kıvrımıyla elde kapatılan, klasik tat",
-    price: "800",
-    img: bohcaImg,
-  },
-
-  {
     name: "Çıtır Mantı",
     desc: "Sevenlere özel dışı çıtır içi özel lezzet",
-    price: "800",
+    price: "900",
     img: citirImg,
+    ingredients: "Un, su, tuz, yumurta, kıyma, soğan, kekik, karabiber",
   },
   {
-    name: "Pelmeni Mantı",
-    desc: "İri kıvrımlı pelmeni usulü",
-    price: "900",
-    img: pelmeniImg,
+    name: "Peynirli Haluj",
+    desc: "Çerkez, Abaza peynirleriyle özel tat",
+    price: "800",
+    img: halujImg,
+    ingredients: "Un, su, tuz, yumurta, Çerkez/Abaza peyniri, Cıbırika (dağ kekiği)",
+    badge: "Yeni",
+  },
+  {
+    name: "Patatesli Hingel",
+    desc: "Özel patatesli harcıyla, elde açılan hamuruyla nefis lezzet",
+    price: "800",
+    img: hingelImg,
+    ingredients: "Un, su, tuz, yumurta, patates, soğan, toz biber, karabiber",
   },
   {
     name: "Tam Buğday Unlu Mantı",
     desc: "Sağlıklı beslenenler için aranan tat",
-    price: "900",
+    price: "1.000",
     img: tamBugdayImg,
+    ingredients: "Tam buğday unu, su, tuz, yumurta, kıyma, soğan, karabiber",
   },
   {
     name: "Organik Unlu Mantı",
     desc: "Özenle seçilmiş organik unla hazırlanan özel seri",
-    price: "1.000",
+    price: "1.100",
     img: organikImg,
   },
   {
     name: "Özbek Mantı",
     desc: "Geleneksel kesim ve iç harcıyla tek lokmada büyük lezzet",
-    price: "1.100",
+    price: "1.200",
     img: ozbekImg,
+    ingredients: "Un, su, tuz, yumurta, kıyma, soğan, patates, kekik, karabiber",
   },
   {
     name: "Glutensiz Mantı",
     desc: "Glutensiz beslenenler için özel hazırlanan lezzet",
     price: "1.300",
     img: glutensizImg,
+    ingredients: "Glutensiz un karışımı, yumurta, su, tuz, kıyma, soğan, karabiber",
+    badge: "Glutensiz",
+  },
+  {
+    name: "Şebit (Yağlama Yufkası — 10 Adet)",
+    desc: "Yağlama için elde açılan ince yufka",
+    price: "300",
+    img: sebitImg,
+    ingredients: "Un, su, tuz, maya",
+    badge: "El yapımı",
+  },
+  {
+    name: "Lavaş (12 Adet)",
+    desc: "Elde açılan yumuşak lavaş",
+    price: "300",
+    img: lavasImg,
+    ingredients: "Un, su, tuz, maya",
+    badge: "El yapımı",
   },
 ];
 
 const promises = [
   {
-    title: "Her Gün Taze Et",
+    title: "Her Gün Taze Kıyma",
     text: "%100 dana eti, her sabah kasaptan taze alınır ve aynı gün kıyılıp harca dönüşür. Dondurulmuş et kullanmıyoruz.",
   },
   {
     title: "Katkısız Hamur",
-    text: "Hamurumuzda katkı maddesi, koruyucu, renklendirici yok. Sadece katkısız un, serbest gezen tavuk yumurtası ve kaya tuzu.",
+    text: "Hamurumuzda katkı maddesi, koruyucu, renklendirici yok. Sadece katkısız un, taze yumurta ve kaya tuzu.",
   },
   {
-    title: "Tamamı El Yapımı",
-    text: "Her hamur oklavayla elde açılır, her mantı tek tek elde kesilip kapatılır. Makine değil, el emeği.",
+    title: "Tamamı Ev Yapımı",
+    text: "Her hamur en katkısız haliyle yoğrulur. Büyük emekle tek tek kapatılır.",
   },
   {
     title: "Hijyenik Mutfak",
@@ -148,8 +168,8 @@ function Index() {
             HAS MANTI
           </h1>
           <p className="mx-auto mt-5 max-w-xl text-base leading-relaxed text-primary-foreground/85 sm:text-lg">
-            Her sabah taze alınan dana eti, katkısız el açması hamur ve tek tek elde
-            kapatılan mantılar. Anne mutfağının tadı, güvenle sofranızda.
+            Katkısız hamur, taze kıyma ve el emeğiyle kapatılan mantılar. Anne
+            mutfağının tadı güvenle sofralarınızda.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-3">
             <a
@@ -171,13 +191,15 @@ function Index() {
       {/* Şeritteki vaatler */}
       <section className="bg-primary py-5">
         <ul className="mx-auto flex max-w-6xl flex-col items-center gap-2 px-6 text-center text-[11px] font-semibold uppercase tracking-[0.18em] text-primary-foreground/90 sm:flex-row sm:justify-center sm:gap-x-8 sm:gap-y-0 sm:text-xs sm:tracking-[0.2em]">
-          <li>Günlük Taze Dana Eti</li>
+          <li>Günlük Taze Kıyma</li>
           <li aria-hidden className="hidden text-gold sm:block">•</li>
           <li>Katkısız Hamur</li>
           <li aria-hidden className="hidden text-gold sm:block">•</li>
-          <li>Elde Açma</li>
+          <li>Taze Yumurta</li>
           <li aria-hidden className="hidden text-gold sm:block">•</li>
           <li>Kaya Tuzu</li>
+          <li aria-hidden className="hidden text-gold sm:block">•</li>
+          <li>Ev Yapımı</li>
         </ul>
       </section>
 
@@ -193,14 +215,14 @@ function Index() {
             </h2>
             <div className="mt-6 space-y-4 text-base leading-relaxed text-muted-foreground">
               <p>
-                Has Mantı'da her gün aynı sırayla başlıyoruz: eti sabah taze alıyoruz,
+                Has Mantı'da her gün aynı sırayla başlıyoruz: kıymayı sabah taze alıyoruz,
                 hamuru o gün yoğuruyoruz, mantıyı o gün elde kesip kapatıyoruz. Bekleyen
                 harç, dünden kalan hamur, makine kesimi yok.
               </p>
               <p>
-                Hamurumuzda yalnızca katkısız un, serbest gezen tavuk yumurtası ve kaya
-                tuzu var. Ne koruyucu, ne kabartıcı, ne de adını bilmediğiniz bir katkı.
-                Aynı özeni tam buğday, organik ve glutensiz serilerimizde de sürdürüyoruz.
+                Hamurumuzda yalnızca katkısız un, taze yumurta ve kaya tuzu var. Ne
+                koruyucu, ne kabartıcı, ne de adını bilmediğiniz bir katkı. Aynı özeni
+                tam buğday, organik ve glutensiz serilerimizde de sürdürüyoruz.
               </p>
               <p className="font-script text-2xl text-primary">
                 "Güvenle sofralarınızda…"
@@ -260,9 +282,6 @@ function Index() {
           <h2 className="mt-4 text-3xl font-semibold sm:text-4xl">
             Fiyat Listesi <span className="text-muted-foreground">(1 kg)</span>
           </h2>
-          <p className="mt-3 text-sm text-muted-foreground">
-            %100 Dana Eti · Katkısız Un · Serbest Gezen Tavuk Yumurtası · Kaya Tuzu
-          </p>
         </div>
 
         <ul className="mt-12 divide-y divide-border">
@@ -271,20 +290,28 @@ function Index() {
               <img
                 src={item.img}
                 alt={item.name}
-                width={item.tall ? 1080 : 800}
-                height={item.tall ? 1440 : 800}
+                width={800}
+                height={800}
                 loading="lazy"
-                className={
-                  item.tall
-                    ? "h-24 w-20 flex-none rounded-lg object-cover sm:h-28 sm:w-24"
-                    : "h-20 w-20 flex-none rounded-full object-cover sm:h-24 sm:w-24"
-                }
+                className="h-20 w-20 flex-none rounded-full object-cover sm:h-24 sm:w-24"
               />
               <div className="min-w-0 flex-1">
-                <h3 className="text-lg font-semibold sm:text-xl">{item.name}</h3>
+                <div className="flex flex-wrap items-center gap-2">
+                  <h3 className="text-lg font-semibold sm:text-xl">{item.name}</h3>
+                  {item.badge && (
+                    <span className="rounded-full bg-accent/15 px-3 py-1 text-[10px] font-semibold uppercase tracking-widest text-accent">
+                      {item.badge}
+                    </span>
+                  )}
+                </div>
                 <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
                   {item.desc}
                 </p>
+                {item.ingredients && (
+                  <p className="mt-1 text-xs leading-relaxed text-muted-foreground/70">
+                    İçindekiler: {item.ingredients}
+                  </p>
+                )}
               </div>
               <p className="flex-none font-display text-lg font-semibold text-primary sm:text-xl">
                 {item.price} TL
@@ -300,19 +327,15 @@ function Index() {
           <h2 className="text-center text-3xl font-semibold sm:text-4xl">
             Sipariş ve Teslimat Bilgileri
           </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-3">
+          <div className="mt-10 grid gap-6 sm:grid-cols-2">
             {[
               {
                 t: "Sakarya İçi",
-                d: "Fiyatlarımız Sakarya içi için geçerlidir, aynı gün elden teslim edilir.",
+                d: "Sakarya içi aynı gün ücretsiz teslim edilir.",
               },
               {
-                t: "Şehir Dışı",
-                d: "Minimum sipariş miktarı 3 kg'dır. Soğuk zincire uygun paketlenir.",
-              },
-              {
-                t: "Gönderim Ücreti",
-                d: "Şehir dışı gönderimlerde her siparişe +300 TL ve kargo ücreti eklenir.",
+                t: "Şehir Dışı Gönderim",
+                d: "Minimum sipariş miktarı 3 kg'dır. Soğuk zincire uygun paketlenir; her siparişe +300 TL ve kargo ücreti eklenir.",
               },
             ].map((x) => (
               <div
@@ -336,7 +359,7 @@ function Index() {
             </a>
           </div>
           <p className="mt-6 text-center text-xs text-primary-foreground/50">
-            İletişim numarasını ve teslimat saatlerini bize ileterek güncelleyebiliriz.
+            Sipariş ve teslimat saatleri için Instagram üzerinden bize yazabilirsiniz.
           </p>
         </div>
       </section>

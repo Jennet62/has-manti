@@ -329,16 +329,10 @@ function Index() {
 
           <div className="mt-12 flex flex-wrap items-center justify-center gap-3">
             <a
-              href="https://wa.me/905423591418"
+              href="https://instagram.com/has.manti"
               className="rounded-full bg-accent px-7 py-3 text-sm font-semibold uppercase tracking-widest text-accent-foreground transition-transform hover:-translate-y-0.5"
             >
-              WhatsApp ile Sipariş
-            </a>
-            <a
-              href="https://instagram.com/has.manti"
-              className="rounded-full border border-primary-foreground/40 px-7 py-3 text-sm font-semibold uppercase tracking-widest transition-colors hover:bg-primary-foreground/10"
-            >
-              @has.manti
+              Instagram ile Sipariş
             </a>
           </div>
           <p className="mt-6 text-center text-xs text-primary-foreground/50">
